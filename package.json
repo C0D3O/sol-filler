@@ -3,7 +3,7 @@
 	"name": "sol-filler",
 	"displayName": "sol-filler",
 	"description": "Automatically fills a .sol file with a template",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"repository": "https://github.com/moneyDev1111/sol-filler",
 	"engines": {
 		"vscode": "^1.79.0"
