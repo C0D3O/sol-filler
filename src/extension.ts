@@ -15,9 +15,9 @@ export function activate() {
 					const fileName = firstLetterToUpperCase + fileNameSplit.slice(1, -4);
 					const snippet = new vscode.SnippetString(`// SPDX-License-Identifier: MIT
 pragma solidity 0.8.20;
-										
+
 contract ${fileName} {
-	$1
+		$1
 }`);
 					vscode.window.activeTextEditor?.insertSnippet(snippet);
 				}
