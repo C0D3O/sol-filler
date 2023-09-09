@@ -14,7 +14,7 @@ export function activate() {
 					const firstLetterToUpperCase = fileNameSplit.charAt(0).toUpperCase();
 					const fileName = firstLetterToUpperCase + fileNameSplit.slice(1, -4);
 					const snippet = new vscode.SnippetString(`// SPDX-License-Identifier: MIT
-pragma solidity 0.8.19;
+pragma solidity 0.8.21;
 
 contract ${fileName} {
 		$1
