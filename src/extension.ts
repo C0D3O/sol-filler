@@ -7,13 +7,13 @@ export function activate() {
 		if (folders) {
 			const watcher = vscode.workspace.createFileSystemWatcher(new vscode.RelativePattern(folders, '**/*.sol'));
 
-			watcher.onDidCreate(uri => {
+			watcher.onDidCreate((uri) => {
 				const path = uri.path.slice(1);
 				const fileNameSplit = path.split('/').at(-1);
 				if (fileNameSplit) {
 					const firstLetterToUpperCase = fileNameSplit.charAt(0).toUpperCase();
 					const fileName = firstLetterToUpperCase + fileNameSplit.slice(1, -4);
-					const snippet = new vscode.SnippetString(`// SPDX-License-Identifier: MIT
+					const snippet = new vscode.SnippetString(`// SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.21;
 
 contract ${fileName} {
@@ -23,6 +23,11 @@ contract ${fileName} {
 						? vscode.window.activeTextEditor?.insertSnippet(snippet)
 						: null;
 				}
+			});
+			// const textWatcher = vscode.workspace.createFileSystemWatcher(new vscode.RelativePattern(folders, '**/*.sol'));
+
+			watcher.onDidChange((uri) => {
+				console.log(uri.path);
 			});
 		}
 	} catch (error) {
