@@ -3,7 +3,7 @@
 	"name": "sol-filler",
 	"displayName": "Solidity Filler",
 	"description": "Automatically fills a .sol file with a template",
-	"version": "0.1.61",
+	"version": "0.1.62",
 	"repository": "https://github.com/C0D3O/sol-filler",
 	"engines": {
 		"vscode": "^1.79.0"
