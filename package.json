@@ -1,10 +1,10 @@
 {
-	"publisher": "c0d30",
+	"publisher": "C0D3O",
 	"name": "sol-filler",
 	"displayName": "sol-filler",
 	"description": "Automatically fills a .sol file with a template",
-	"version": "0.1.5",
-	"repository": "https://github.com/moneyDev1111/sol-filler",
+	"version": "0.1.6",
+	"repository": "https://github.com/C0D3O/sol-filler",
 	"engines": {
 		"vscode": "^1.79.0"
 	},
@@ -14,7 +14,7 @@
 	"activationEvents": [
 		"onStartupFinished"
 	],
-	"main": "./out/extension.js",
+	"main": "./out/extension.ts",
 	"contributes": {
 		"commands": [
 			{
