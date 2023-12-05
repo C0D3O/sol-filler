@@ -1,9 +1,9 @@
 {
-	"publisher": "moneeyDev",
+	"publisher": "c0d30",
 	"name": "sol-filler",
 	"displayName": "sol-filler",
 	"description": "Automatically fills a .sol file with a template",
-	"version": "0.1.3",
+	"version": "0.1.5",
 	"repository": "https://github.com/moneyDev1111/sol-filler",
 	"engines": {
 		"vscode": "^1.79.0"
